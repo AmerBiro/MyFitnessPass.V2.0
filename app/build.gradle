@@ -33,9 +33,13 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     def material_components = "1.5.0-alpha04"
     def lifecycle_version = "2.4.0-rc01"
     def room_version = "2.3.0"
